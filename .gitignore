@@ -1,7 +1,6 @@
 imdbapp/venv
 imdbapp/__pycache__
 imdbapp/imdbapp/__pycache__
-imdbapp/
 imdbapp/imdbapp/nohup.out
 imdbapp/imdbapp/db.sqlite3
 __pycache__
