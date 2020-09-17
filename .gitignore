@@ -1,11 +1,10 @@
-imdbapp/venv
+venv/
+*db.sqlite3
 imdbapp/__pycache__
 imdbapp/imdbapp/__pycache__
 imdbapp/imdbapp/nohup.out
-imdbapp/imdbapp/db.sqlite3
 __pycache__
 *.pyc
-__ pycache __
 /static
 /media
 .DS_Store
