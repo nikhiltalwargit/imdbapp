@@ -23,8 +23,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '9b9=x5yr^lb(2$$dx428rng1r_h8#_)9bh^x!6(a+s8!!e&e6y'
 
+production = True
+
 # SECURITY WARNING: don't run with debug turned on in production!
+
 DEBUG = True
+
+if production:
+    DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -105,7 +111,10 @@ USE_TZ = False
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') 
 
 STATIC_URL = '/static/'
-MEDIA_ROOT = os.path.join(BASE_DIR,'media')
-MEDIA_URL = '/media/'
+
+MEDIA_ROOT = 'static/'
+
+if production:
+    MEDIA_ROOT = 'videora/static/'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

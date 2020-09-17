@@ -3,6 +3,7 @@ venv/
 imdbapp/__pycache__
 imdbapp/imdbapp/__pycache__
 imdbapp/imdbapp/nohup.out
+imdb_out.json
 __pycache__
 *.pyc
 /static
